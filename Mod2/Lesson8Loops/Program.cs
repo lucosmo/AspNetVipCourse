@@ -22,8 +22,31 @@ class Program
         E3.Fibonacci(number);
         */
 
+        /*
         int number = 10;
         E4.DigitalTree(number);
+        */
 
+        /*
+        int start = 1;
+        int end = 20;
+        E5.Cubes(start, end);
+        */
+
+        /*
+        int start = 0;
+        int end = 20;
+        double sum = E6.CalculateSum(start, end);
+        Console.WriteLine(sum);
+        */
+
+        /*
+        int oddNumber = 9;
+        E7.DrawDiamond(oddNumber);
+        */
+
+        string str = "AbcdefgGGh";
+        string reversed = E8.ReverseString(str);
+        Console.WriteLine($"Reversed {str} is {reversed}");
     }
 }
