@@ -45,8 +45,24 @@ class Program
         E7.DrawDiamond(oddNumber);
         */
 
+        /*
         string str = "AbcdefgGGh";
         string reversed = E8.ReverseString(str);
         Console.WriteLine($"Reversed {str} is {reversed}");
+        */
+
+        /*
+        int number = 5;
+        List<bool> list = E9.DecimalToBinary(number);
+        E9.PrintBinary(list, number);
+        */
+
+        int number1 = 48;
+        int number2 = 180;
+
+        int gcd = E10.GreatestCommonDivisor(number1, number2);
+        int lcm = E10.LeastCommonMultiple(number1, number2, gcd);
+        Console.WriteLine($"Least Common Multiple of {number1} and {number2} is {lcm}");
+
     }
 }
