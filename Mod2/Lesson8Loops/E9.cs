@@ -1,26 +1,28 @@
+using System.Text;
+
 namespace Lesson8Loops;
 
 public class E9
 {
-    public static List<bool> DecimalToBinary(int number)
+    public static string DecimalToBinary(int number)
     {
-        List<bool> output = [];
+        if (number <= 0)
+        {
+            return "0";
+        }
+        StringBuilder output = new();
         int num = number;
         while (num >= 1)
         {
-            output.Add(num % 2 == 1);
+            output.Append(num % 2);
             num/=2;
         }
-        return output;
+        return output.ToString();
     }
 
-    public static void PrintBinary(List<bool> list, int number)
+    public static void PrintBinary(int number)
     {
-        Console.Write($"Decimal {number} is equal to binary ");
-        foreach (bool x in list)
-        {
-            char value = x == true ? '1' : '0';
-            Console.Write(value);
-        }
+        string binaryStr = DecimalToBinary(number);
+        Console.Write($"Decimal {number} is equal to binary {binaryStr}");
     }
 }
